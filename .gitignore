@@ -1,0 +1,14 @@
+# Файлы операционной системы
+.DS_Store
+
+# Файлы редактора
+.idea
+
+# Вспомогательные файлы
+node_modules
+
+# Файлы сборки
+public/bundle.css
+public/bundle.css.map
+public/bundle.js
+public/bundle.js.map
