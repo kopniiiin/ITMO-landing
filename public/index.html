@@ -15,33 +15,112 @@
 <body class="page">
 
   <header class="header">
-  <div class="header__container">
-    <a class="university-logo" href="#">
-      <img src="images/logo-university.svg" alt="Логотип университета ИТМО" width="304" height="32">
-    </a>
-    <a class="lang-link" aria-label="Английская версия сайта" href="#">
-      En
-      <svg width="24" height="24">
-        <use xlink:href="images/sprite.svg#icon-lang"></use>
-      </svg>
-    </a>
-  </div>
-  <nav class="navigation">
-    <div class="navigation__container">
-      <a class="laboratory-logo" href="#">
-        <img src="images/logo-laboratory.svg" alt="Логотип лаборатории ИТМО" width="464" height="50">
+    <div class="header__container">
+      <a class="university-logo" href="#">
+        <img src="images/logo-university.svg" alt="Логотип университета ИТМО" width="304" height="32">
       </a>
-      <button class="navigation__burger-button burger-button" aria-label="Меню навигации" type="button"></button>
-      <ul class="navigation__list">
-        <li class="navigation__item"><a class="link link_theme_black" href="#">О лаборатории</a></li>
-        <li class="navigation__item"><a class="link link_theme_black" href="#">Учебная деятельность</a></li>
-        <li class="navigation__item"><a class="link link_theme_black" href="#">Научная деятельность</a></li>
-        <li class="navigation__item"><a class="link link_theme_black" href="#">Новости</a></li>
-        <li class="navigation__item"><a class="link link_theme_black" href="#">Контакты</a></li>
+      <a class="lang-link" aria-label="Английская версия сайта" href="#">
+        En
+        <svg width="24" height="24">
+          <use xlink:href="images/sprite.svg#icon-lang"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="navigation">
+      <div class="navigation__container">
+        <a class="laboratory-logo" href="#">
+          <img src="images/logo-laboratory.svg" alt="Логотип лаборатории ИТМО" width="464" height="50">
+        </a>
+        <button class="navigation__burger-button burger-button" aria-label="Меню навигации" type="button"></button>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="link link_theme_black" href="#">О лаборатории</a></li>
+          <li class="navigation__item"><a class="link link_theme_black" href="#">Учебная деятельность</a></li>
+          <li class="navigation__item"><a class="link link_theme_black" href="#">Научная деятельность</a></li>
+          <li class="navigation__item"><a class="link link_theme_black" href="#">Новости</a></li>
+          <li class="navigation__item"><a class="link link_theme_black" href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <address class="footer__copyright">
+        <a class="university-logo university-logo_large" href="#">
+          <img src="images/logo-university.svg" alt="Логотип университета ИТМО" width="304" height="32">
+        </a>
+        <p>
+          Информация © 1993–2020 Университет ИТМО<br>
+          Разработка © 2020<br>
+          Департамент информационных технологий
+        </p>
+      </address>
+      <ul class="footer__list">
+        <li><a class="link link_theme_white" href="#">Страница ректора</a></li>
+        <li><a class="link link_theme_white" href="#">Страница ректора</a></li>
+        <li><a class="link link_theme_white" href="#">Институты и факультеты</a></li>
+        <li><a class="link link_theme_white" href="#">Институты и факультеты</a></li>
+        <li><a class="link link_theme_white" href="#">Библиотека</a></li>
+        <li><a class="link link_theme_white" href="#">Библиотека</a></li>
+        <li><a class="link link_theme_white" href="#">Издания Университета</a></li>
+        <li><a class="link link_theme_white" href="#">Издания Университета</a></li>
+        <li><a class="link link_theme_white" href="#">Приемная комиссия</a></li>
+        <li><a class="link link_theme_white" href="#">Приемная комиссия</a></li>
+        <li><a class="link link_theme_white" href="#">Расписание занятий</a></li>
+        <li><a class="link link_theme_white" href="#">Расписание занятий</a></li>
+      </ul>
+      <address class="footer__contacts">
+        <p>
+          г. Санкт-Петербург, Кронверкский пр., 49, ауд. 333<br>
+          Тел: <a href="tel:+79315380170">+7 (931) 538-01-70</a><br>
+          E-mail: <a href="mailto:job@corp.ifmo.ru">job@corp.ifmo.ru</a>
+        </p>
+        <div class="socials">
+          Мы в соцсетях:
+          <ul class="socials__list">
+            <li>
+              <a class="social-link" aria-label="Университет ИТМО во Вконтакте" href="#">
+                <svg width="18" height="11">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" aria-label="Университет ИТМО в Фейсбуке" href="#">
+                <svg width="9" height="16">
+                  <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" aria-label="Университет ИТМО в Твиттере" href="#">
+                <svg width="16" height="14">
+                  <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" aria-label="Университет ИТМО в Инстаграме" href="#">
+                <svg width="18" height="18">
+                  <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </address>
+    </div>
+    <div class="footer__terms-and-conditions">
+      <ul class="footer__terms-and-conditions-list">
+        <li class="footer__terms-and-conditions-item">
+          <a href="#">Правила использования информации в доменной зоне ifmo.ru</a>
+        </li>
+        <li class="footer__terms-and-conditions-item">
+          <a href="#">Политика по обработке Персональных данных</a>
+        </li>
       </ul>
     </div>
-  </nav>
-</header>
+  </footer>
 
   <script src="bundle.js"></script>
 
