@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl { margin: 0; }
+
+ul,
+ol,
+dl,
+button { padding: 0; }
+
+ul,
+ol,
+dl { list-style: none; }
+
+cite,
+address { font-style: normal; }
+
+button,
+summary { cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+summary {
+  display: block;
+
+  &::-webkit-details-marker { display: none; }
+}
