@@ -1,0 +1,45 @@
+.accordion {
+  display: grid;
+  row-gap: 8px;
+
+  &__details {
+    border: 1px solid $color-gray;
+    border-radius: 8px;
+
+    &[open] {
+      .accordion__summary { background-color: $color-white; }
+
+      .accordion__summary-icon {
+        color: $color-red;
+
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  &__summary {
+    @include text-size-l();
+
+    position: relative;
+
+    border-radius: 8px;
+    padding: 16px 40px 16px 16px;
+
+    background-color: $color-gray;
+
+    &:hover,
+    &:focus { background-color: $color-white; }
+  }
+
+  &__summary-icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+
+    color: $color-blue;
+
+    transform: translateY(-50%);
+  }
+
+  &__text { padding: 0 16px 16px; }
+}

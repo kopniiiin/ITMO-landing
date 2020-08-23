@@ -1,0 +1,24 @@
+.disciplines {
+  @include container();
+  @include grid();
+
+  row-gap: 20px;
+
+  @media (min-width: $breakpoint-l) { row-gap: 40px; }
+
+  &__title {
+    @include title-size-m();
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+  }
+
+  &__accordion {
+    grid-column: 1 / -1;
+
+    @media (min-width: $breakpoint-s) { grid-column: 2 / -2; }
+
+    @media (min-width: $breakpoint-m) { grid-column: 4 / -4; }
+  }
+}
