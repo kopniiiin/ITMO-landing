@@ -1,0 +1,33 @@
+.news {
+  display: grid;
+  row-gap: 64px;
+
+  @media (min-width: $breakpoint-l) { row-gap: 80px; }
+
+  &__container {
+    @include container();
+
+    display: grid;
+    row-gap: 20px;
+
+    @media (min-width: $breakpoint-l) { row-gap: 40px; }
+  }
+
+  &__title { @include title-size-m(); }
+
+  &__list {
+    @include grid();
+
+    row-gap: 40px;
+  }
+
+  &__item {
+    grid-column: auto / span 4;
+
+    display: grid;
+
+    @media (min-width: $breakpoint-s) { grid-column: auto / span 3; }
+
+    @media (min-width: $breakpoint-m) { grid-column: auto / span 4; }
+  }
+}

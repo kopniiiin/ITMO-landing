@@ -1,0 +1,75 @@
+.slider {
+  display: grid;
+  align-items: center;
+  row-gap: 32px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $color-white;
+
+  background-color: $color-blue;
+  background-image: url("images/pattern.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $breakpoint-l) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
+
+  &__slides {
+    @include container();
+    @include grid();
+
+    @media (min-width: $breakpoint-m) { grid-area: 1 / 1; }
+  }
+
+  &__slide {
+    grid-column: 1 / -1;
+
+    display: none;
+    justify-items: start;
+    row-gap: 24px;
+
+    @media (min-width: $breakpoint-m) { grid-column: 2 / 8 span; }
+
+    &_active { display: grid; }
+  }
+
+  &__slide-title { @include title-size-l(); }
+
+  &__controls {
+    @include container();
+
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: center;
+    column-gap: 64px;
+
+    @media (min-width: $breakpoint-m) {
+      grid-area: 1 / 1;
+
+      justify-content: space-between;
+    }
+  }
+
+  &__control {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+
+    color: $color-white;
+  }
+
+  &__control-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}

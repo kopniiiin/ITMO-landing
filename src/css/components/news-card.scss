@@ -1,0 +1,66 @@
+.news-card {
+  @include text-size-l();
+
+  display: block;
+
+  border: 1px solid $color-gray;
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  &:hover,
+  &:focus { box-shadow: $shadow; }
+
+  &__title { @include visually-hidden(); }
+
+  &__photo {
+    width: 100%;
+    height: 224px;
+
+    object-fit: cover;
+  }
+
+  &__description {
+    display: grid;
+    grid-template-areas:
+      "date source"
+      "text text";
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    padding: 16px;
+
+    @media (min-width: $breakpoint-l) { padding: 32px; }
+  }
+
+  &__date,
+  &__source {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color-gray-dark;
+  }
+
+  &__date {
+    grid-area: date;
+
+    text-transform: uppercase;
+  }
+
+  &__source {
+    grid-area: source;
+    justify-self: end;
+
+    display: inline-grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__source-icon {
+    width: 16px;
+    height: 10px;
+  }
+
+  &__text { grid-area: text; }
+}
