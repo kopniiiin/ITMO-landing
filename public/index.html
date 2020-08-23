@@ -298,6 +298,67 @@
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.5377064521967!2d30.30779031603692!3d59.95640366762752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696314112326f7d%3A0x63ef01af3f1f273b!2z0JrRgNC-0L3QstC10YDQutGB0LrQuNC5INC_0YAuLCA0OSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzEwMQ!5e0!3m2!1sru!2sru!4v1598044019197!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <section class="modal__dialog">
+          <h3 class="modal__title">Напишите нам!</h3>
+          <button class="modal__close-button" aria-label="Закрыть" type="button"></button>
+          <form class="modal__form" action="#">
+            <label class="text-field">
+              <span>Ваши фамилия и имя <span class="text-field__required-mark">*</span></span>
+              <input
+                class="text-field__input"
+                type="text"
+                name="user-name"
+                placeholder="Введите ваше имя"
+                required>
+            </label>
+            <label class="text-field">
+              <span>Электронная почта <span class="text-field__required-mark">*</span></span>
+              <input
+                class="text-field__input"
+                type="email"
+                name="user-email"
+                placeholder="primer@itmo.ru"
+                required>
+            </label>
+            <label class="text-field">
+              <span>Номер телефона <span class="text-field__required-mark">*</span></span>
+              <input
+                class="text-field__input"
+                type="tel"
+                name="user-tel"
+                pattern="\+7[0-9]{10}"
+                placeholder="+71234567890"
+                required>
+            </label>
+            <label class="text-field text-field_large">
+              <span>Что непонятно или нужно уточнить? <span class="text-field__required-mark">*</span></span>
+              <textarea
+                class="text-field__input"
+                name="user-message"
+                maxlength="300"
+                placeholder="Введите ваше сообщение"
+                required></textarea>
+            </label>
+            <p>
+              Отправляя данную форму, вы даете согласие на обработку своих
+              <a class="link link_theme_blue" href="#">Персональных данных</a>
+            </p>
+            <button class="modal__submit-button button button_theme_blue button_icon_left button_large" type="submit">
+              <svg class="button__icon" width="16" height="14">
+                <use xlink:href="images/sprite.svg#icon-mail"></use>
+              </svg>
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="alert" role="alert">Спасибо за обратную связь!</div>
+
   </main>
 
   <footer class="footer">
