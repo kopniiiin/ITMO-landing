@@ -1,0 +1,69 @@
+.footer {
+  color: rgba($color-white, 0.5);
+
+  background-color: #232473;
+
+  &__container {
+    @include container();
+    @include grid();
+
+    row-gap: 32px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__copyright,
+  &__list,
+  &__contacts {
+    grid-column: 1 / -1;
+
+    display: grid;
+    align-content: start;
+  }
+
+  &__copyright,
+  &__contacts { row-gap: 24px; }
+
+  &__copyright {
+    @media (min-width: $breakpoint-m) { grid-column: auto / 4 span; }
+  }
+
+  &__list {
+    row-gap: 8px;
+
+    @media (min-width: $breakpoint-s) {
+      grid-column: auto / 5 span;
+
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 32px;
+    }
+  }
+
+  &__contacts {
+    @media (min-width: $breakpoint-m) { grid-column: auto / 3 span; }
+  }
+
+  &__terms-and-conditions { background-color: #1a1b57; }
+
+  &__terms-and-conditions-list {
+    @include container();
+
+    display: grid;
+    row-gap: 16px;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media (min-width: $breakpoint-m) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  }
+
+  &__terms-and-conditions-item {
+    &:nth-child(2n) {
+      @media (min-width: $breakpoint-m) { justify-self: end; }
+    }
+  }
+}
