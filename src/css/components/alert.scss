@@ -1,0 +1,20 @@
+.alert {
+  @include text-size-m();
+
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  z-index: 1;
+
+  display: none;
+
+  border-radius: 4px;
+  padding: 16px;
+
+  color: $color-green;
+
+  background-color: #e9f9ee;
+  transform: translateX(-50%);
+
+  &_active { display: block; }
+}
