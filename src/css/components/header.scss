@@ -1,0 +1,15 @@
+.header {
+  background-image: linear-gradient(to right, #3951e7, #832ab9);
+
+  &__container {
+    @include container();
+
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
