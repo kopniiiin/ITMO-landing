@@ -1,0 +1,30 @@
+.text-field {
+  display: inline-grid;
+  row-gap: 8px;
+
+  font-weight: 600;
+
+  &_large {
+    .text-field__input {
+      height: 96px;
+      resize: none;
+    }
+  }
+
+  &__required-mark { color: $color-red; }
+
+  &__input {
+    @include text-size-s();
+
+    border: 1px solid #d4d6d6;
+    border-radius: 2px;
+    padding: 8px 16px;
+
+    color: $color-black;
+
+    &:hover,
+    &:focus { border-color: #a4a6a6; }
+
+    &::placeholder { color: #c4c4c4; }
+  }
+}

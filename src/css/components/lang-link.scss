@@ -1,0 +1,11 @@
+.lang-link {
+  display: inline-grid;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  column-gap: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: $color-white;
+}

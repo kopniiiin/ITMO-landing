@@ -1,0 +1,11 @@
+.university-logo {
+  display: inline-grid;
+
+  width: 160px;
+
+  &_large {
+    width: 240px;
+
+    @media (min-width: $breakpoint-s) { width: 280px; }
+  }
+}

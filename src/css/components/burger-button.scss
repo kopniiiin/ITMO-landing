@@ -1,0 +1,38 @@
+.burger-button {
+  position: relative;
+
+  width: 56px;
+  height: 56px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 32px;
+    height: 4px;
+
+    background-color: $color-black;
+  }
+
+  &::before {
+    content: "";
+
+    box-shadow: 0 -8px $color-black, 0 8px $color-black;
+    transform: translate(-50%, -50%);
+  }
+
+  &_active {
+    &::before {
+      box-shadow: none;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+}

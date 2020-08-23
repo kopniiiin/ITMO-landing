@@ -1,0 +1,7 @@
+.laboratory-logo {
+  display: inline-grid;
+
+  width: 216px;
+
+  @media (min-width: $breakpoint-s) { width: 400px; }
+}

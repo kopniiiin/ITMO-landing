@@ -1,0 +1,16 @@
+.social-link {
+  display: inline-grid;
+  justify-items: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  color: $color-white;
+
+  background-color: $color-blue;
+
+  &:hover,
+  &:focus { background-color: $color-blue-dark; }
+}

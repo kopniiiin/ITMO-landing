@@ -1,0 +1,26 @@
+.link {
+  @include text-size-m();
+
+  &_theme {
+    &_blue {
+      color: $color-blue;
+
+      &:hover,
+      &:focus { color: $color-blue-dark; }
+    }
+
+    &_white {
+      color: $color-white;
+
+      &:hover,
+      &:focus { color: $color-gray; }
+    }
+
+    &_black {
+      color: $color-black;
+
+      &:hover,
+      &:focus { color: $color-gray-dark; }
+    }
+  }
+}
