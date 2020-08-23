@@ -1,6 +1,6 @@
 const Key = { ESCAPE: `Escape`, TAB: `Tab` };
 
-const TIME_TO_SEND_DATA = 4000;
+const TIME_TO_SEND_DATA = 600;
 const TIME_TO_SHOW_ALERT = 6000;
 
 const page = document.querySelector(`.page`);
