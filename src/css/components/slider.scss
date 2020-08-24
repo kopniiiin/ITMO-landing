@@ -30,9 +30,16 @@
 
     display: none;
     justify-items: start;
+    align-content: center;
     row-gap: 24px;
 
+    min-height: 320px;
+
+    @media (min-width: $breakpoint-s) { min-height: 208px; }
+
     @media (min-width: $breakpoint-m) { grid-column: 2 / 8 span; }
+
+    @media (min-width: $breakpoint-l) { min-height: 216px; }
 
     &_active { display: grid; }
   }
